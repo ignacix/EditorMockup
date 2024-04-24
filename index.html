@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(20, 19, 19);">
+    <header class="navbar bg-primary navbar-expand-lg bd-navbar sticky-top" >
+        <h1 class="text-light">Cambiar el Mockup</h1>
+        
+    </header>    
+    <main class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sección Izquierda -->
+                <div class="card bg-primary-subtle col-md-5 my-4 mx-4 ">
+                    <section class="ms-4" id="seccionIzquierda">
+                        <h2 >Formulario</h2>
+                        <form id="formulario">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" placeholder="Steve Wosniak" class="form-control" id="nombre" name="nombre">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="loQueSea">Lo que quieras</label>
+                                <input type="text" placeholder="Argentina-BsAs" class="form-control" id="loQueSea" name="loQueSea">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <input type="text" placeholder="DB Admin" class="form-control" id="descripcion" name="descripcion">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Woz@gmail.com" class="form-control" id="email" name="email">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="linkedin">LinkedIn</label>
+                                <input type="text" placeholder="https://www.linkedin.com/in/wozniaksteve/" class="form-control" id="linkedin" name="linkedin">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="github">GitHub</label>
+                                <input type="text" placeholder="https://github.com/hola" class="form-control" id="github" name="github">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="instagram">Instagram</label>
+                                <input type="text" placeholder="https://www.instagram.com/chau/" class="form-control" id="instagram" name="instagram">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="saludo">Saludo</label>
+                                <input type="text" placeholder="Hola! Bienvenido a mi web :D" class="form-control" id="saludo" name="saludo">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="p1">Párrafo 1</label>
+                                <input type="text" placeholder="Soy Luke Skywalker. Desde mi formación como Jedi... " class="form-control" id="p1" name="p1">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="p2">Párrafo 2</label>
+                                <input type="text" placeholder="Tengo un gran interés por el lado oscuro..." class="form-control" id="p2" name="p2">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="p3">Párrafo 3</label>
+                                <input type="text" placeholder="¡Que la Fuerza esté con todos nosotros!" class="form-control" id="p3" name="p3">
+                            </div>                        
+                            <div class="form-group">
+                                <label for="p3">Párrafo 3</label>
+                                <input type="color" class="form-control" id="color" name="color">
+                            </div> 
+                            <button type="button" class="btn btn-primary mb-4" onclick="cambiarTexto()">Cambiar Texto</button>
+                        </form>
+                    </section>
+                </div>
+                <!-- Sección Derecha -->
+                <div class="col-md-6 my-4">
+                    <section id="seccionDerecha">
+                        <h2 class="text-light">Previsualización</h2>
+                        <button id="btnDownload" type="button" class="btn btn-primary mb-4" onclick="descargarArchivo()" style="visibility: hidden;">Descargar Archivos</button>                                                
+                        <iframe id="previewFrame" src="index1.html" width="100%" height="800px" frameborder="0"></iframe>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="text-align: center; background-color: rgb(20, 19, 19);">
+        <p style="margin-top: 10px; color: rgb(168, 168, 168);">Made with ❤️ by <a href="https://ignaciojerez.com.ar/">Igna</a> - 2024 </p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.0/jszip.min.js"></script>
+
+</body>
+</html>
