@@ -412,7 +412,7 @@ function descargarArchivo() {
     var zip = new JSZip();
 
     // Agregar archivos a la carpeta ZIP
-    zip.file("src/iconGithub.png", fetch("src/iconGitHub.png").then(res => res.blob()));
+    zip.file("src/iconGithub.png", fetch("src/iconGithub.png").then(res => res.blob()));
     zip.file("src/iconLinkedin.png", fetch("src/iconLinkedin.png").then(res => res.blob()));
     zip.file("src/iconInstagram.png", fetch("src/iconInstagram.png").then(res => res.blob()));
     zip.file("src/iconProfile.png", fetch("src/iconProfile.png").then(res => res.blob()));
